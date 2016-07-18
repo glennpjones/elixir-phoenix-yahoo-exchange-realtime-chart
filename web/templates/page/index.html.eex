@@ -1,22 +1,22 @@
 <h1>
-  hello
+  Current foreign exchanges
 </h1>
-
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
-</div>
 
 <form action="/" method="post">
 	<fieldset>
 		<label>Symbol</label>
   	<input name="symbol" list="symbols" autofocus="autofocus" required="required" />
   	<datalist id="symbols">
-  		<option value="AAPL"/>
-  		<option value="LEDS"/>
-  		<option value="USO"/>
-  		<option value="DJIA"/>
+  		<option value="EUR/USD"/>
+  		<option value="EUR/YEN"/>
+  		<option value="USD/YEN"/>
   	</datalist>
 	</fieldset>
-	<input type="submit" name="Get chart"/>
+  <input type="submit" name="Get chart"/>
 </form>
+
+<h1>
+  <%= @rate[:rate] %>
+</h1>
+
+<rate value=<%=@rate[:rate]%>></rate>
