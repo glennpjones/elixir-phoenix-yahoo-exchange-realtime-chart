@@ -1,7 +1,8 @@
 defmodule ElixirYahooChart.Endpoint do
   use Phoenix.Endpoint, otp_app: :elixir_yahoo_chart
 
-  socket "/socket", ElixirYahooChart.UserSocket
+  # socket "/socket", ElixirYahooChart.UserSocket
+  socket "/chartsocket", ElixirYahooChart.ChartSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #

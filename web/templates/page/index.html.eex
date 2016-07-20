@@ -22,6 +22,11 @@
 <rate value=<%=@rate[:rate]%>></rate>
 
 <hr>
-
+<h2>Socket</h2>
 <div id="messages"></div>
 <input id="chat-input" type="text"></input>
+
+<hr>
+<h2>Chartssocket</h2>
+<div id="chart-messages"></div>
+<input id="chart-chat-input" type="text"></input>
