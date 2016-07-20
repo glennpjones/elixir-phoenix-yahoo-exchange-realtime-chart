@@ -20,6 +20,9 @@ defmodule ElixirYahooChart do
     # for other strategies and supported options
     opts = [strategy: :one_for_one, name: ElixirYahooChart.Supervisor]
     Supervisor.start_link(children, opts)
+
+    # start broadcasting 
+    ElixirYahooChart.GetRates.update_all
   end
 
   # Tell Phoenix to update the endpoint configuration
