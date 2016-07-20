@@ -72,6 +72,11 @@ chachannel.on("new_msg", payload => {
 })
 
 chachannel.on("upd_figure", payload => {
+	if (data.labels.length > 120) {
+		data.labels.shift();
+		data.datasets[0].data.shift()
+	}
+
 	data.labels.push(Date());
 	data.datasets[0].data.push(payload.body);
 	myChart.update();
