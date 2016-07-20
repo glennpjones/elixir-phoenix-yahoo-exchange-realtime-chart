@@ -16,8 +16,7 @@ defmodule ElixirYahooChart.Router do
   scope "/", ElixirYahooChart do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
-    get "/eur-dol", ExchangeController, :index
+    get "/", ExchangeController, :index
   end
 
   # Other scopes may use custom stacks.

@@ -41,3 +41,8 @@ config :elixir_yahoo_chart, ElixirYahooChart.Repo,
   database: "elixir_yahoo_chart_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :quantum, cron: [
+    # Every minute
+   "* * * * *": {ElixirYahooChart.GetRates, :update_all}
+   ]

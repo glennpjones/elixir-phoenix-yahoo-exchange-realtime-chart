@@ -19,7 +19,7 @@ defmodule ElixirYahooChart.Mixfile do
   def application do
     [mod: {ElixirYahooChart, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :httpoison]]
+                    :phoenix_ecto, :postgrex, :httpoison, :quantum]]
   end
 
   # Specifies which paths to compile per environment.
@@ -39,7 +39,8 @@ defmodule ElixirYahooChart.Mixfile do
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      {:yahoo_fx, "~> 0.2.0"},
-     {:hackney, "~> 1.4"}]
+     {:hackney, "~> 1.4"},
+     {:quantum, ">= 1.7.1"}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.

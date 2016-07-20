@@ -72,7 +72,9 @@ chachannel.on("new_msg", payload => {
 })
 
 chachannel.on("upd_figure", payload => {
-	myChart.addData([payload.body], Date());
+	data.labels.push(Date());
+	data.datasets[0].data.push(payload.body);
+	myChart.update();
 })
 
 chachannel.join()
