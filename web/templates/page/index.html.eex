@@ -20,3 +20,8 @@
 </h1>
 
 <rate value=<%=@rate[:rate]%>></rate>
+
+<hr>
+
+<div id="messages"></div>
+<input id="chat-input" type="text"></input>

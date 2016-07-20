@@ -5,6 +5,6 @@ defmodule ElixirYahooChart.PageController do
   def index(conn, _params) do
     conn
     |> assign(:rate, get_exchange_rate)
-    |> render "index.html"
+    |> render("index.html")
   end
 end

@@ -2,7 +2,7 @@ defmodule ElixirYahooChart.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", ElixirYahooChart.RoomChannel
+  channel "rooms:*", ElixirYahooChart.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
