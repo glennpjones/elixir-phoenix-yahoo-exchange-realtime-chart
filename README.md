@@ -1,6 +1,6 @@
-# Elixir Phoenix EUR/USD live
+# Elixir Phoenix "app" with chart.js showing realtime EUR/USD exchange rate
 
-This is an experiment to see how I could combine calls to the Yahoo EUR/USD exchange rate api with phoenix channels (websockets) to allow continuous updating of a chart.js linechart.
+This has been an experiment to see how I could combine calls to the Yahoo EUR/USD exchange rate api with phoenix channels (websockets) to allow continuous updating of a chart.js linechart showing the exchange rate. I'm learning Elixir.
 
 To start the Phoenix app:
   * Install dependencies with `mix deps.get`
